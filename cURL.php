@@ -1,3 +1,4 @@
+<?php 
 function xcurl($url,$ref=null,$post=array(),$ua="Mozilla/5.0 (X11; Linux x86_64; rv:2.2a1pre) Gecko/20110324 Firefox/4.2a1pre",$print=false) {
     $ch = curl_init();
 	curl_setopt($ch, CURLOPT_AUTOREFERER, true);
@@ -23,3 +24,4 @@ function xcurl($url,$ref=null,$post=array(),$ua="Mozilla/5.0 (X11; Linux x86_64;
 		return $output;
 	}
 }
+?>
